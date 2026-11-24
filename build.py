@@ -47,6 +47,7 @@ a{color:inherit;text-decoration:none}
 .note{display:flex;gap:16px;align-items:flex-start;background:#E9FBF4;border-bottom:2px solid #2BD4A4;padding:12px 64px;font-family:Inter,Arial,sans-serif;font-size:14px;line-height:1.4}
 .note b{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
 .note .screen{margin-left:auto;white-space:nowrap;color:#3a3a3a}
+.note .back{white-space:nowrap;color:#000;font-weight:600;text-decoration:underline}
 header.site{display:flex;justify-content:space-between;align-items:center;padding:20px 64px;border-bottom:2px solid #000;background:#fff}
 .logo{font-size:32px;letter-spacing:.1em}
 header nav{display:flex;gap:36px;font-size:22px}
@@ -266,7 +267,7 @@ def page(slug, title, story, body, active="", group="", footer=True):
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <style>{CSS}</style></head>
 <body>
-<div class="note"><div><b>User story</b>{story}</div><span class="screen">{slug.split('-')[0]} · {title}</span></div>
+<div class="note"><div><b>User story</b>{story}</div><span class="screen">{slug.split('-')[0]} · {title}</span><a class="back" href="../index.html">← All wireframes</a></div>
 {header(active)}
 <main>{body}</main>
 {FOOTER if footer else ""}
