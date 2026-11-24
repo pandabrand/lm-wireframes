@@ -32,17 +32,3 @@ Patrick Hand ships with Figma, so text keeps the kit's look after import.
 | Stockists | 23 Stockists (simple list by area, no search or map) |
 | Newsletter | Footer form on every screen, 24 popup + error, already-subscribed and success states |
 
-## Decisions (from the client)
-
-- Tours and tastings: requests by email, no booking platform. The form emails the LM team, who confirm by reply.
-- Cabin: bookings through Hapio.
-- Club: run by hand by the client with spreadsheets. The site has an application form only: no member accounts, no online payment.
-- No bottles sold online. Product pages point to stockists, the tasting room and the club.
-- Tours are paid by Stripe invoice, sent by the LM team after they confirm. No payment on the site forms.
-
-## Open questions for the client
-
-- Club: how will members pay? Not decided yet. The wireframes say the team "arranges payment" so they work either way.
-- Cabin: Hapio handles scheduling, not payments, so which payment provider? Do promo codes live in Hapio, or need custom logic? How are codes issued (per guest, shared, members only)?
-- Club: membership tiers, prices, shipping states, and whether members get a cabin discount code.
-- Trade availability: behind a login, or a public list without prices? Who updates the stock numbers, and how?
